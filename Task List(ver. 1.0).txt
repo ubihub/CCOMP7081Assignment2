@@ -13,8 +13,8 @@ System Design
 i. Architecture -Kevin 
 ii. Components - Alex
 iii. Database / data structure - Alex  
-iv. Detailed Class Diagrams 
-v. Detailed Sequence Diagrams / State Diagrams 
+iv. Detailed Class Diagrams -Alex  
+v. Detailed Sequence Diagrams / State Diagrams - James 
 vi. User Interface - Kevin 
 e. Alex
 Process Model 
