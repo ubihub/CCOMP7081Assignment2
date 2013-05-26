@@ -16,7 +16,7 @@ iii. Database / data structure - Alex
 iv. Detailed Class Diagrams 
 v. Detailed Sequence Diagrams / State Diagrams 
 vi. User Interface - Kevin 
-e. Alex & Kevin
+e. Alex
 Process Model 
 f. James
 Gantt Chart 
