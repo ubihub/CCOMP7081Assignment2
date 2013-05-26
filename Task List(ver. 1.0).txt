@@ -1,0 +1,22 @@
+a. Alex
+Introduction of the project 
+b. Alex
+Background 
+c. James
+Requirement Analysis 
+i. Use Cases / Use Stories 
+ii. Class Diagrams / CRC Cards 
+iii. Sequence Diagrams / State Diagrams 
+iv. Data Flow Diagram 
+d. Alex & Kevin
+System Design 
+i. Architecture 
+ii. Components 
+iii. Database / data structure  
+iv. Detailed Class Diagrams 
+v. Detailed Sequence Diagrams / State Diagrams 
+vi. User Interface 
+e. Alex & Kevin
+Process Model 
+f. James
+Gantt Chart 
