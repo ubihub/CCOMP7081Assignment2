@@ -10,12 +10,12 @@ iii. Sequence Diagrams / State Diagrams
 iv. Data Flow Diagram 
 d. Alex & Kevin
 System Design 
-i. Architecture 
-ii. Components 
-iii. Database / data structure  
+i. Architecture -Kevin 
+ii. Components - Alex
+iii. Database / data structure - Alex  
 iv. Detailed Class Diagrams 
 v. Detailed Sequence Diagrams / State Diagrams 
-vi. User Interface 
+vi. User Interface - Kevin 
 e. Alex & Kevin
 Process Model 
 f. James
