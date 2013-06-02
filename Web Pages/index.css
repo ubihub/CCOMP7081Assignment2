@@ -1,0 +1,24 @@
+h1{
+text-align: center;
+}
+
+#TableOfContents{
+margin-left:auto;
+margin-right:auto;
+}
+
+li{
+font-size:14pt;
+}
+
+li#sectionTitle{
+font-size:16pt;
+}
+
+p{
+font-size:14pt;
+}
+
+ol.subDir{
+list-style:lower-roman;	
+}
