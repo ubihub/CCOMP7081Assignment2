@@ -4,7 +4,7 @@
 		<link rel="stylesheet" type="text/css" href="index.css">
 	</head>
 <body>
-	<h1>SuperRent Car Rental - Manager Component</h1>
+	<a id="top"><h1>SuperRent Car Rental - Manager Component</h1></a>
 	<br/>
 	
 	<table id="TableOfContents">
@@ -54,7 +54,7 @@
 		<p>
 		Managers will be allowed access to functionality to sell vehicles out of the system. This will allow proper procedure is followed when selling old vehicles that Super Rent doesn’t want anymore. This will allow for the company to make back a portion of their investment at the end of the vehicles life span. Well stream lining the process for all involved.
 		</p>
-		<br/>
+		<a  href="#top"><p class="backToTop">Back to Top &uarr;</p></a>
 	<a id="projectBg"><li id="sectionTitle">Background</li></a>
 	<p>
 	The SuperRent car rental company requires manager level software. This system will implement a data base too store car information, and an interface to allow for business transactions and data manipulation. SuperRent rents a large number of vehicles of varying types, ages, values, and locations.
@@ -62,12 +62,13 @@
 	<p>
 	This massive amount of information requires a system to streamline interaction between it and its users. SuperRent management needs this to access vehicle information across their many locations. Allow control over selling vehicles and tracking when vehicles have reached the end of their life cycle without having to complete a large amount of accounting by hand.
 	</p>
-	<br/>
+	<a  href="#top"><p class="backToTop">Back to Top &uarr;</p></a>
 	<a id="reqAnalysis"><li id="sectionTitle">Requirement Analysis</li></a>
 		<ol class="subDir">
 			<a id="useCase"><li id="sectionTitle">Use Cases</li></a>
 				<img src="../Use Case.dfUseCase.jpg"/><br/>
 				<img src="../Manager UseCase.dfUseCase.jpg"/>
+				<a  href="#top"><p class="backToTop">Back to Top &uarr;</p></a>
 			<a id="classDiagram"><li id="sectionTitle">Class Diagrams / CRC Cards</li></a>
 				<img src="../ClassDiagram_Analysis.dfClass.jpg"/>
 				<img src="../crc1.gif"/>
@@ -79,6 +80,7 @@
 				<img src="../crc7.gif"/>
 				<img src="../crc8.gif"/>
 				<img src="../crc9.gif"/>
+				<a  href="#top"><p class="backToTop">Back to Top &uarr;</p></a>
 			<a id="seqDiagram"><li id="sectionTitle">Sequence / State Diagrams</li></a>
 				<img src="../SequenceDiagram_Analysis_Add_Customer.dfSequence.jpg"/>
 				<img src="../SequenceDiagram_Analysis_Add_Vehicles.dfSequence.jpg"/>
@@ -88,6 +90,7 @@
 				<img src="../SequenceDiagram_Analysis_Update_Customer.dfSequence.jpg"/>
 				<img src="../SequenceDiagram_Analysis_Update_Vehicles.dfSequence.jpg"/>
 				<img src="../StatechartDiagram_Analysis.dfState.jpg"/>
+				<a  href="#top"><p class="backToTop">Back to Top &uarr;</p></a>
 			<a id="dfDiagram"><li id="sectionTitle">Data Flow Diagrams</li></a>
 			<table id="dfd">
 			<tr>
@@ -112,39 +115,24 @@
 			<p>
 			The previous data flow diagrams display the interaction between the manager and the systems data structures. Starting with Level 0 data flow showing a very high level design with the manager interface interacting with the systems database. Level 1 Data Flow Shows more detailed interaction between the manager and different objects in the system. It also describes the flow of the data through the system. Level 2 Data flow Shows a detailed description of the interaction between the manager interface and the data base by displaying the reports and components that will be used to interface with the database. 
 			</p>
-				<table id="dfd">
-				<tr>
-					<td>Level 0 Data Flow</td>
-					<td>
-						<img src="../SuperRent Manager DFD Level0.jpg"/>
-					</td>
-				</tr>
-				<tr>
-					<td>Level 1 Data Flow</td>
-					<td>
-						<img src="../SuperRent Manager DFD Level1.jpg"/>
-					</td>
-				</tr>
-				<tr>
-					<td>Level 2 Data Flow</td>
-					<td>
-						<img src="../SuperRent Manager DFD Level2(ver 1.3).jpg"/>
-					</td>
-				</tr>
-				</table>	
+		<a  href="#top"><p class="backToTop">Back to Top &uarr;</p></a>			
 		</ol>
 	<a id="sysDesign"><li id="sectionTitle">System Design</li></a>
 		<ol class="subDir">
 			<a id="architecture"><li id="sectionTitle">Architecture</li></a>
 			<p>The SuperRent system is a web-based application which is designed upon a multi-layered architecture. The primary functions, which are to buy and sell new or used cars, are handled by a system divided into structure of five layers where the tasks to carry out these functions. The User Interface where all users will commonly interact with the application. An Application layer which handles what primary functions needs to be carried out dependent upon what the user needs. The Business layer tracks financial transactions and figures when car sales or rentals are made. The Data access layer to handle the information flow between the application and the database. Finally there is the Database layer, which is responsible for storing information regarding customers, employees, car inventory, car pricing, and rental rates. Utilising agile development and following the established architecture, the developers can ensure every project iteration is capable of carrying out the system’s main functions.
 				</p> <br/>
-			<img id="archImg" src="../Layered architecture_2.png" />
+				<img id="archImg" src="../Layered architecture_2.png" />
+				<a  href="#top"><p class="backToTop">Back to Top &uarr;</p></a>
 			<a id="components"><li id="sectionTitle">Components</li></a>
-			<img src="../ComponentDiagram_Design.dfComponent.jpg"/>
+				<img src="../ComponentDiagram_Design.dfComponent.jpg"/>
+				<a  href="#top"><p class="backToTop">Back to Top &uarr;</p></a>
 			<a id="database"><li id="sectionTitle">Database / Data Structure</li></a>
-			<img src="../Database_Design.jpg"/><br/>
+				<img src="../Database_Design.jpg"/><br/>
+				<a  href="#top"><p class="backToTop">Back to Top &uarr;</p></a>
 			<a id="detClass"><li id="sectionTitle">Detailed Class Diagrams</li></a>
-			<img src="../.jpg"/><br/>
+				<img src="../.jpg"/><br/>
+				<a  href="#top"><p class="backToTop">Back to Top &uarr;</p></a>
 			<a id="detSeq"><li id="sectionTitle">Detailed Sequence / State Diagrams</li></a>
 				<img class="seqDia" src="../SequenceDiagram_Design_Add_Customer.dfSequence.jpg"/>
 				<img class="seqDia" src="../SequenceDiagram_Design_Add_Vehicles.dfSequence.jpg"/>
@@ -157,36 +145,37 @@
 			<a id="ui"><li id="sectionTitle">User Interface</li></a>
 		</ol>
 	<a id="processModel"><li id="sectionTitle">Process Model</li></a>
-	<p>	
-		The Super Rent software tool will be developed using the Spiral Model. This iterative process model will allow
-		for portions of the project to be brought on-line and tested before the project is completed. This gives the 
-		Spiral Model the ability to allow for reassessment of requirements and design on each revolution. Each jump of 
-		the spiral will bring new features on-line and allow time for testing of that feature before reassessment.
-	</p>
-	<p>
-		The first revolution of the spiral will be modelling how the software will run. This will allow the team to discover
-		any problems with either the design or requirements modelling thus far before heading to hard coding. Once the models
-		and complete and accepted by the team they can move to the next spiral.
-	</p>
-	<p>
-		The data base creation and data base interface will be the next spiral. Testing these data structures and there
-		interface before piling code reliant on their specification will allow for smoother work in the next spiral.  
-		This spiral will be mostly for hard data base creation and interface coding to allow for smooth and secure access 
-		by all following software. Stress testing of the database will have to wait as no report system will be finished yet.
-	</p>
-	<p>
-		Now business valuable processes can start to be created. First the Modification and creation of data base entries must 
-		be created to manage the data base previously created. This will allow for testing of the management software’s user 
-		interface and find out if all the features required by the users is in the design for the data management system.
-		After the Database management section is complete business logic can be implemented allowing for tagging of entries 
-		based on criteria and the rental system implementation.  Also sale logic and interface will be added to allow managers to sell older vehicles. 
-	<p/>
-	<p>
-		Once the final spiral is complete the manager system should be up and running if any extra requirements have been found 
-		during previous cycles and new cycle can begin. If not final testing can be completed before the software is sent shipped
-	</p> <br/>
+		<p>	
+			The Super Rent software tool will be developed using the Spiral Model. This iterative process model will allow
+			for portions of the project to be brought on-line and tested before the project is completed. This gives the 
+			Spiral Model the ability to allow for reassessment of requirements and design on each revolution. Each jump of 
+			the spiral will bring new features on-line and allow time for testing of that feature before reassessment.
+		</p>
+		<p>
+			The first revolution of the spiral will be modelling how the software will run. This will allow the team to discover
+			any problems with either the design or requirements modelling thus far before heading to hard coding. Once the models
+			and complete and accepted by the team they can move to the next spiral.
+		</p>
+		<p>
+			The data base creation and data base interface will be the next spiral. Testing these data structures and there
+			interface before piling code reliant on their specification will allow for smoother work in the next spiral.  
+			This spiral will be mostly for hard data base creation and interface coding to allow for smooth and secure access 
+			by all following software. Stress testing of the database will have to wait as no report system will be finished yet.
+		</p>
+		<p>
+			Now business valuable processes can start to be created. First the Modification and creation of data base entries must 
+			be created to manage the data base previously created. This will allow for testing of the management software’s user 
+			interface and find out if all the features required by the users is in the design for the data management system.
+			After the Database management section is complete business logic can be implemented allowing for tagging of entries 
+			based on criteria and the rental system implementation.  Also sale logic and interface will be added to allow managers to sell older vehicles. 
+		<p/>
+		<p>
+			Once the final spiral is complete the manager system should be up and running if any extra requirements have been found 
+			during previous cycles and new cycle can begin. If not final testing can be completed before the software is sent shipped
+		</p> <a  href="#top"><p class="backToTop">Back to Top &uarr;</p></a>
 	<a id="gantt"><li id="sectionTitle">Gantt Chart</li></a>
-	<img src="../Assignment 2 - Project Gantt Chart2.jpg"/>
+		<img src="../Assignment 2 - Project Gantt Chart2.jpg"/>
+		<a  href="#top"><p class="backToTop">Back to Top &uarr;</p></a>
 	</ol>
 </body>
 </html>
