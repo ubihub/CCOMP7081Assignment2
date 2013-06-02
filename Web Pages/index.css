@@ -22,3 +22,14 @@ font-size:14pt;
 ol.subDir{
 list-style:lower-roman;	
 }
+
+table#dfd{
+margin-left:auto;
+margin-right:auto;
+}
+
+table#dfd td{
+border:1px solid black;
+text-align:center;
+}
+
