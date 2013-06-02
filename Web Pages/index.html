@@ -66,9 +66,28 @@
 	<a id="reqAnalysis"><li id="sectionTitle">Requirement Analysis</li></a>
 		<ol class="subDir">
 			<a id="useCase"><li id="sectionTitle">Use Cases</li></a>
+				<img src="../Use Case.dfUseCase.jpg"/><br/>
+				<img src="../Manager UseCase.dfUseCase.jpg"/>
 			<a id="classDiagram"><li id="sectionTitle">Class Diagrams / CRC Cards</li></a>
-			<img src="../crc1.gif"/>
+				<img src="../ClassDiagram_Analysis.dfClass.jpg"/>
+				<img src="../crc1.gif"/>
+				<img src="../crc2.gif"/>
+				<img src="../crc3.gif"/>
+				<img src="../crc4.gif"/>
+				<img src="../crc5.gif"/>
+				<img src="../crc6.gif"/>
+				<img src="../crc7.gif"/>
+				<img src="../crc8.gif"/>
+				<img src="../crc9.gif"/>
 			<a id="seqDiagram"><li id="sectionTitle">Sequence / State Diagrams</li></a>
+				<img src="../SequenceDiagram_Analysis_Add_Customer.dfSequence.jpg"/>
+				<img src="../SequenceDiagram_Analysis_Add_Vehicles.dfSequence.jpg"/>
+				<img src="../SequenceDiagram_Analysis_Print_Reports.dfSequence.jpg"/>
+				<img src="../SequenceDiagram_Analysis_Sell_Used_Vehicles.dfSequence.jpg"/>
+				<img src="../SequenceDiagram_Analysis_Set_Rates_Costs.dfSequence.jpg"/>
+				<img src="../SequenceDiagram_Analysis_Update_Customer.dfSequence.jpg"/>
+				<img src="../SequenceDiagram_Analysis_Update_Vehicles.dfSequence.jpg"/>
+				<img src="../StatechartDiagram_Analysis.dfState.jpg"/>
 			<a id="dfDiagram"><li id="sectionTitle">Data Flow Diagrams</li></a>
 			<table id="dfd">
 			<tr>
@@ -93,18 +112,48 @@
 			<p>
 			The previous data flow diagrams display the interaction between the manager and the systems data structures. Starting with Level 0 data flow showing a very high level design with the manager interface interacting with the systems database. Level 1 Data Flow Shows more detailed interaction between the manager and different objects in the system. It also describes the flow of the data through the system. Level 2 Data flow Shows a detailed description of the interaction between the manager interface and the data base by displaying the reports and components that will be used to interface with the database. 
 			</p>
-			
-			
+				<table id="dfd">
+				<tr>
+					<td>Level 0 Data Flow</td>
+					<td>
+						<img src="../SuperRent Manager DFD Level0.jpg"/>
+					</td>
+				</tr>
+				<tr>
+					<td>Level 1 Data Flow</td>
+					<td>
+						<img src="../SuperRent Manager DFD Level1.jpg"/>
+					</td>
+				</tr>
+				<tr>
+					<td>Level 2 Data Flow</td>
+					<td>
+						<img src="../SuperRent Manager DFD Level2(ver 1.3).jpg"/>
+					</td>
+				</tr>
+				</table>	
 		</ol>
 	<a id="sysDesign"><li id="sectionTitle">System Design</li></a>
 		<ol class="subDir">
 			<a id="architecture"><li id="sectionTitle">Architecture</li></a>
 			<p>The SuperRent system is a web-based application which is designed upon a multi-layered architecture. The primary functions, which are to buy and sell new or used cars, are handled by a system divided into structure of five layers where the tasks to carry out these functions. The User Interface where all users will commonly interact with the application. An Application layer which handles what primary functions needs to be carried out dependent upon what the user needs. The Business layer tracks financial transactions and figures when car sales or rentals are made. The Data access layer to handle the information flow between the application and the database. Finally there is the Database layer, which is responsible for storing information regarding customers, employees, car inventory, car pricing, and rental rates. Utilising agile development and following the established architecture, the developers can ensure every project iteration is capable of carrying out the system’s main functions.
 				</p> <br/>
+			<img id="archImg" src="../Layered architecture_2.png" />
 			<a id="components"><li id="sectionTitle">Components</li></a>
+			<img src="../ComponentDiagram_Design.dfComponent.jpg"/>
 			<a id="database"><li id="sectionTitle">Database / Data Structure</li></a>
+			<img src="../Database_Design.jpg"/><br/>
 			<a id="detClass"><li id="sectionTitle">Detailed Class Diagrams</li></a>
+			<img src="../.jpg"/><br/>
 			<a id="detSeq"><li id="sectionTitle">Detailed Sequence / State Diagrams</li></a>
+				<img class="seqDia" src="../SequenceDiagram_Design_Add_Customer.dfSequence.jpg"/>
+				<img class="seqDia" src="../SequenceDiagram_Design_Add_Vehicles.dfSequence.jpg"/>
+				<img class="seqDia" src="../SequenceDiagram_Design_Print_Reports.dfSequence.jpg"/>
+				<img class="seqDia" src="../SequenceDiagram_Design_Sell_Used_Vehicles.dfSequence.jpg"/>
+				<img class="seqDia" src="../SequenceDiagram_Design_Set_Rates_Costs.dfSequence.jpg"/>
+				<img class="seqDia" src="../SequenceDiagram_Design_Update_Customer.dfSequence.jpg"/>
+				<img class="seqDia" src="../SequenceDiagram_Design_Update_Vehicles.dfSequence.jpg"/>
+				<img src="../StatechartDiagram_Design.dfState.jpg"/><br/>
 			<a id="ui"><li id="sectionTitle">User Interface</li></a>
 		</ol>
 	<a id="processModel"><li id="sectionTitle">Process Model</li></a>
@@ -137,7 +186,7 @@
 		during previous cycles and new cycle can begin. If not final testing can be completed before the software is sent shipped
 	</p> <br/>
 	<a id="gantt"><li id="sectionTitle">Gantt Chart</li></a>
-	<img src="../Assignment 2 - Project Gantt Chart.jpg"/>
+	<img src="../Assignment 2 - Project Gantt Chart2.jpg"/>
 	</ol>
 </body>
 </html>
