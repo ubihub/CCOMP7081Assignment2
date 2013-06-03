@@ -143,7 +143,7 @@
 			</tr>
 			</table>
 			<p>
-			The previous data flow diagrams display the interaction between the manager and the systems data structures. Starting with Level 0 data flow showing a very high level design with the manager interface interacting with the systems database. Level 1 Data Flow Shows more detailed interaction between the manager and different objects in the system. It also describes the flow of the data through the system. Level 2 Data flow Shows a detailed description of the interaction between the manager interface and the data base by displaying the reports and components that will be used to interface with the database. 
+			The above menttioned data flow diagrams display the interaction between the manager and the systems data structures. Starting with the Level 0 data flow, showing a very high level design with the manager interface interacting with the systems database. Level 1 Data Flow displays more detailed interaction between the manager and different objects in the system. It also describes the flow of the data through the system. Level 2 Data flow further elaborates a detailed description of the interaction between the manager interface and the data base by displaying the reports and components that will be used to interface with the database. 
 			</p>
 		<a  href="#top"><p class="backToTop">Back to Top &uarr;</p></a>			
 		</ol>
@@ -160,11 +160,17 @@
 			<a id="database"><li id="sectionTitle">Database / Data Structure</li></a>
 				<img src="../Database_Design.jpg"/><br/>
 				<p>
-				The Data base structure is based around three base tables. From VType,Locations,and customers the rest of the data base is built. VTypes references types of vehicles compact, economic, truck and so on. All other vehicle tables are children of this table. The hierarchy is Vtype to Vehicle model to vehicles that are then referenced by the remainder of the database. Customers are tracked based on there phone number which is placed as foreign keys inside reservations and rentals. Customer member ships are tracked in a separate table so that customers that don't have a membership don't waist space by having those empty fields. Rentals and Sales are tracked with there own ID's but are also connected to the customer and vehicle tables by the vehicle ID and Customer Phone number. This allows for those transactions to be searched based on location or customer through their customer an vehicle table relations.    
+				The Database structure is based around three base tables. From VType, Locations, and customers the rest of the data base is built. VTypes references types of vehicles compact, economic, truck and so on. All other vehicle tables are children of this table. The hierarchy is Vtype to Vehicle model to vehicles that are then referenced by the remainder of the database. Customers are tracked based on there phone number which is placed as foreign keys inside reservations and rentals. Customer member ships are tracked in a separate table so that customers that don't have a membership don't waist space by having those empty fields. Rentals and Sales are tracked with there own ID's but are also connected to the customer and vehicle tables by the vehicle ID and Customer Phone number. This allows for those transactions to be searched based on location or customer through their customer an vehicle table relations.    
 				</p>
 				<a  href="#top"><p class="backToTop">Back to Top &uarr;</p></a>
 			<a id="detClass"><li id="sectionTitle">Detailed Class Diagrams</li></a>
-				<img id="classDia" src="../ClassDiagram_Design.dfPackage.jpg"/><br/>
+				<img id="classDia" src="../ClassDiagram_Design.dfPackage.jpg"/>
+				<p>
+					The application utilises a session java bean to track user actions when they log onto the application. The singleton design pattern ensures the existence of the current user's session whilst other users may also be logged onto the same application. This design pattern is primarily used when users logon the application, conduct functions which are connected to the database, and print receipts with information gathered from the the database.
+				</p>
+				<p>
+					The functions are divided into java beans representing data entities and sessions. Whenever a user conducts any action, any of these java beans will hold onto the current user's login session and any information which was created or altered during the session.
+				</p>
 				<a  href="#top"><p class="backToTop">Back to Top &uarr;</p></a>
 			<a id="detSeq"><li id="sectionTitle">Detailed Sequence / State Diagrams</li></a>
 				<img class="seqDia" src="../SequenceDiagram_Design_Set_Rates_Costs.dfSequence.jpg"/>
@@ -177,6 +183,9 @@
 				<img src="../StatechartDiagram_Design.dfState.jpg"/>
 				<a  href="#top"><p class="backToTop">Back to Top &uarr;</p></a>
 			<a id="ui"><li id="sectionTitle">User Interface</li></a>
+				<p>
+					The application UI features a login prompt upon opening where the user is prompted for a UserID and password. After the user has sucessfully logged onto the application, they are welcomed to a main menu hub.
+				</p>
 		</ol>
 	<a id="processModel"><li id="sectionTitle">Process Model</li></a>
 		<p>	
@@ -209,6 +218,7 @@
 		</p> <a  href="#top"><p class="backToTop">Back to Top &uarr;</p></a>
 	<a id="gantt"><li id="sectionTitle">Gantt Chart</li></a>
 		<img src="../Assignment 2 - Project Gantt Chart2.jpg"/>
+		
 		<a  href="#top"><p class="backToTop">Back to Top &uarr;</p></a>
 	</ol>
 </body>
