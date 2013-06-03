@@ -159,6 +159,9 @@
 				<a  href="#top"><p class="backToTop">Back to Top &uarr;</p></a>
 			<a id="database"><li id="sectionTitle">Database / Data Structure</li></a>
 				<img src="../Database_Design.jpg"/><br/>
+				<p>
+				The Data base structure is based around three base tables. From VType,Locations,and customers the rest of the data base is built. VTypes references types of vehicles compact, economic, truck and so on. All other vehicle tables are children of this table. The hierarchy is Vtype to Vehicle model to vehicles that are then referenced by the remainder of the database. Customers are tracked based on there phone number which is placed as foreign keys inside reservations and rentals. Customer member ships are tracked in a separate table so that customers that don't have a membership don't waist space by having those empty fields. Rentals and Sales are tracked with there own ID's but are also connected to the customer and vehicle tables by the vehicle ID and Customer Phone number. This allows for those transactions to be searched based on location or customer through their customer an vehicle table relations.    
+				</p>
 				<a  href="#top"><p class="backToTop">Back to Top &uarr;</p></a>
 			<a id="detClass"><li id="sectionTitle">Detailed Class Diagrams</li></a>
 				<img id="classDia" src="../ClassDiagram_Design.dfPackage.jpg"/><br/>
