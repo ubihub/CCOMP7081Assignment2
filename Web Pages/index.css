@@ -1,4 +1,4 @@
-h1{
+h1,h3{
 text-align: center;
 }
 
@@ -11,7 +11,7 @@ li{
 font-size:14pt;
 }
 
-li#sectionTitle{
+li.sectionTitle{
 font-size:16pt;
 }
 
@@ -50,4 +50,12 @@ width:950px;
 
 .backToTop{
 text-align:right;
+}
+
+.ui{
+height:300px;
+width:400px;
+margin-left: auto;
+margin-right: auto;
+text-align:center;
 }

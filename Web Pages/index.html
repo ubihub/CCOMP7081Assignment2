@@ -1,10 +1,12 @@
 <html>
 	<head>
+
 		<title>SuperRent Car Rentals Requirement Analysis & Design</title>
 		<link rel="stylesheet" type="text/css" href="index.css">
 	</head>
 <body>
 	<a id="top"><h1>SuperRent Car Rental - Manager Component</h1></a>
+	<h3>Group 4: Kevin Eng, Alex Lochhead, and James Kwon</h3>
 	<br/>
 	
 	<table id="TableOfContents">
@@ -18,22 +20,22 @@
 		<li><a href="#projectBg">Project Background</a></li>
 		<li><a href="#reqAnalysis">Requirement Analysis</a></li>
 			<ol class="subDir">
-				<li><a href="#useCase">Use Cases</li>
-				<li><a href="#classDiagram">Class Diagrams / CRC Cards</li>
-				<li><a href="#seqDiagram">Sequence Diagrams / State Daigrams</li>
-				<li><a href="#dfDiagram">Data Flow Diagrams</li>
+				<li><a href="#useCase">Use Cases</a></li>
+				<li><a href="#classDiagram">Class Diagrams / CRC Cards</a></li>
+				<li><a href="#seqDiagram">Sequence Diagrams / State Diagrams</a></li>
+				<li><a href="#dfDiagram">Data Flow Diagrams</a></li>
 			</ol>
-		<li><a href="#sysDesign">System Design</li>
+		<li><a href="#sysDesign">System Design</a></li>
 			<ol class="subDir">
-				<li><a href="#architecture">Architecture</li>
-				<li><a href="#components">Components</li>
-				<li><a href="#database">Database / Data Structure</li>
-				<li><a href="#detClass">Detailed Class Diagram</li>
-				<li><a href="#detSeq">Detailed Sequence Diagram</li>
-				<li><a href="#ui">User Interface</li>
+				<li><a href="#architecture">Architecture</a></li>
+				<li><a href="#components">Components</a></li>
+				<li><a href="#database">Database / Data Structure</a></li>
+				<li><a href="#detClass">Detailed Class Diagram</a></li>
+				<li><a href="#detSeq">Detailed Sequence Diagram</a></li>
+				<li><a href="#ui">User Interface</a></li>
 			</ol>
-		<li><a href="#processModel">Process Model</li>
-		<li><a href="#gantt">Gantt Chart</li>
+		<li><a href="#processModel">Process Model</a></li>
+		<li><a href="#gantt">Gantt Chart</a></li>
 	</ol>
 	</td>
 	</tr>
@@ -41,21 +43,15 @@
 	<br/>
 
 	<ol>
-	<a id="Intro"><li id="sectionTitle">Introduction</li></a>
+	<a id="Intro"><li class="sectionTitle">Introduction</li></a>
 		<p>
 		Super Rent is a rental business that rents vehicles of varying types, models and prices.They have to handle multiple locations in different cities. Each location handles reservations and rentals from a verity of customers. The management of these assets falls to the manager of each location.
 		</p>
-		<p>
-		The Super Rent Manager software will allow managers at Super Rent branches around the city to manage their stores stock of vehicles. We will create a number of tools that will increase Manager’s productivity such as the ability to search vehicles in the system either by category, age or location. Also the manager will be able to update or add vehicle entries in the system.
-		</p>
-		<p>
-		The system will allow the manager access to stored vehicle entries. It will provide tools to modify and create entries quickly and easily. Also vehicles can be quickly search based on location or type. Vehicles will be stored based on location and type from economy, compact, mid-size and etc.
-		</p>
-		<p>
-		Managers will be allowed access to functionality to sell vehicles out of the system. This will allow proper procedure is followed when selling old vehicles that Super Rent doesn’t want anymore. This will allow for the company to make back a portion of their investment at the end of the vehicles life span. Well stream lining the process for all involved.
-		</p>
+		<p>The Super Rent Manager software will allow managers at SuperRent branches around the city to manage their stores stock of vehicles. We will create a number of tools that will increase Manager’s productivity such as the ability to search vehicles in the system either by category, age or location. Also the manager will be able to update or add vehicle entries in the system.</p>
+		<p>The system will allow the manager access to stored vehicle entries. It will provide tools to modify and create entries quickly and easily. Also vehicles can be quickly search based on location or type. Vehicles will be stored based on location and type from economy, compact, mid-size and etc.</p>
+		<p>Managers will be allowed access to functionality to sell vehicles out of the system. This will allow proper procedure is followed when selling old vehicles that Super Rent doesn’t want anymore. This will allow for the company to make back a portion of their investment at the end of the vehicles life span. Well stream lining the process for all involved.</p>
 		<a  href="#top"><p class="backToTop">Back to Top &uarr;</p></a>
-	<a id="projectBg"><li id="sectionTitle">Background</li></a>
+	<a id="projectBg"><li class="sectionTitle">Background</li></a>
 	<p>
 	The SuperRent car rental company requires manager level software. This system will implement a database to store car information, and an interface to allow for business transactions and data manipulation. SuperRent rents a large number of vehicles of varying types, ages, values, and locations.
 	</p>
@@ -63,82 +59,88 @@
 	This massive amount of information requires a system to streamline interaction between it and its users. SuperRent management needs this to access vehicle information across their many locations. Allow control over selling vehicles and tracking when vehicles have reached the end of their life cycle without having to complete a large amount of accounting by hand.
 	</p>
 	<a  href="#top"><p class="backToTop">Back to Top &uarr;</p></a>
-	<a id="reqAnalysis"><li id="sectionTitle">Requirement Analysis</li></a>
+	<a id="reqAnalysis"><li class="sectionTitle">Requirement Analysis</li></a>
 		<ol class="subDir">
-			<a id="useCase"><li id="sectionTitle">Use Cases</li></a>
-				<img src="../Use Case.dfUseCase.jpg"/><br/>
-				<img src="../Manager UseCase.dfUseCase.jpg"/>
+			<a id="useCase"><li class="sectionTitle">Use Cases</li></a>
+				<p>
+					The project component is part of an already existing SuperRent car rental application. By completing this project, we ensure that another core functionality which will ease the usage of the system for both employees and customers.
+				</p>
+				<img src="../Use Case.dfUseCase.jpg" alt="Overall Use Cases"/><br/>
+				<p>
+				The system will be capable of carrying out tasks which a user with Manager credentials can use. The project primarily focuses on the "setting car rental rates", "adding new cars to the database", "printing receipts/ reports", and "adding/updating Customer/Dealer information."
+				</p>
+				<img src="../Manager UseCase.dfUseCase.jpg" alt="Manager Use Cases"/>
 				<a  href="#top"><p class="backToTop">Back to Top &uarr;</p></a>
-			<a id="classDiagram"><li id="sectionTitle">Class Diagrams / CRC Cards</li></a>
+			<a id="classDiagram"><li class="sectionTitle">Class Diagrams / CRC Cards</li></a>
 				<table>
 				<tr>
-					<td><img src="../ClassDiagram_Analysis.dfClass.jpg"/></td>
+					<td><img src="../ClassDiagram_Analysis.dfClass.jpg" alt="Class Diagram - Analysis"/></td>
 					<td>
-						<img src="../crc1.gif"/>
+						<img src="../crc1.gif" alt=""/>
 					</td>
 				</tr>
 				<tr>
 					<td>
-						<img src="../crc2.gif"/>
+						<img src="../crc2.gif" alt=""/>
 					</td>
 					<td>
-						<img src="../crc3.gif"/>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<img src="../crc4.gif"/>
-					</td>
-					<td>
-						<img src="../crc5.gif"/>
+						<img src="../crc3.gif" alt=""/>
 					</td>
 				</tr>
 				<tr>
 					<td>
-						<img src="../crc6.gif"/>
+						<img src="../crc4.gif" alt=""/>
 					</td>
 					<td>
-						<img src="../crc7.gif"/>
+						<img src="../crc5.gif" alt=""/>
 					</td>
 				</tr>
 				<tr>
 					<td>
-						<img src="../crc8.gif"/>
+						<img src="../crc6.gif" alt=""/>
 					</td>
 					<td>
-						<img src="../crc9.gif"/>
+						<img src="../crc7.gif" alt=""/>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<img src="../crc8.gif" alt=""/>
+					</td>
+					<td>
+						<img src="../crc9.gif" alt=""/>
 					</td>
 				</tr>
 				</table>
 				<a  href="#top"><p class="backToTop">Back to Top &uarr;</p></a>
-			<a id="seqDiagram"><li id="sectionTitle">Sequence / State Diagrams</li></a>
-				<img src="../SequenceDiagram_Analysis_Set_Rates_Costs.dfSequence.jpg"/>
-				<img src="../SequenceDiagram_Analysis_Sell_Used_Vehicles.dfSequence.jpg"/>
-				<img src="../SequenceDiagram_Analysis_Print_Reports.dfSequence.jpg"/>
-				<img src="../SequenceDiagram_Analysis_Add_Vehicles.dfSequence.jpg"/>
-				<img src="../SequenceDiagram_Analysis_Update_Vehicles.dfSequence.jpg"/>
-				<img src="../SequenceDiagram_Analysis_Add_Customer.dfSequence.jpg"/>
-				<img src="../SequenceDiagram_Analysis_Update_Customer.dfSequence.jpg"/>
-				<img src="../StatechartDiagram_Analysis.dfState.jpg"/>
+			<a id="seqDiagram"><li class="sectionTitle">Sequence / State Diagrams</li></a>
+				<img src="../SequenceDiagram_Analysis_Set_Rates_Costs.dfSequence.jpg" alt=""/>
+				<img src="../SequenceDiagram_Analysis_Sell_Used_Vehicles.dfSequence.jpg" alt=""/>
+				<img src="../SequenceDiagram_Analysis_Print_Reports.dfSequence.jpg" alt=""/>
+				<img src="../SequenceDiagram_Analysis_Add_Vehicles.dfSequence.jpg" alt=""/>
+				<img src="../SequenceDiagram_Analysis_Update_Vehicles.dfSequence.jpg" alt=""/>
+				<img src="../SequenceDiagram_Analysis_Add_Customer.dfSequence.jpg" alt=""/>
+				<img src="../SequenceDiagram_Analysis_Update_Customer.dfSequence.jpg" alt=""/>
+				<img src="../StatechartDiagram_Analysis.dfState.jpg" alt=""/>
 				<a  href="#top"><p class="backToTop">Back to Top &uarr;</p></a>
-			<a id="dfDiagram"><li id="sectionTitle">Data Flow Diagrams</li></a>
+			<a id="dfDiagram"><li class="sectionTitle">Data Flow Diagrams</li></a>
 			<table id="dfd">
 			<tr>
 				<td>Level 0 Data Flow</td>
 				<td>
-					<img src="../SuperRent Manager DFD Level0.jpg"/>
+					<img src="../SuperRent Manager DFD Level0.jpg" alt=""/>
 				</td>
 			</tr>
 			<tr>
 				<td>Level 1 Data Flow</td>
 				<td>
-					<img src="../SuperRent Manager DFD Level1.jpg"/>
+					<img src="../SuperRent Manager DFD Level1.jpg" alt=""/>
 				</td>
 			</tr>
 			<tr>
 				<td>Level 2 Data Flow</td>
 				<td>
-					<img src="../SuperRent Manager DFD Level2(ver 1.3).jpg"/>
+					<img src="../SuperRent Manager DFD Level2(ver 1.3).jpg" alt=""/>
 				</td>
 			</tr>
 			</table>
@@ -147,27 +149,27 @@
 			</p>
 		<a  href="#top"><p class="backToTop">Back to Top &uarr;</p></a>			
 		</ol>
-	<a id="sysDesign"><li id="sectionTitle">System Design</li></a>
+	<a id="sysDesign"><li class="sectionTitle">System Design</li></a>
 		<ol class="subDir">
-			<a id="architecture"><li id="sectionTitle">Architecture</li></a>
+			<a id="architecture"><li class="sectionTitle">Architecture</li></a>
 			<p>The SuperRent system is a web-based application which is designed upon a multi-layered architecture. The primary functions, which are to buy and sell new or used cars, are handled by a system divided into structure of five layers where the tasks to carry out these functions. The User Interface where all users will commonly interact with the application. An Application layer which handles what primary functions needs to be carried out dependent upon what the user needs. The Business layer tracks financial transactions and figures when car sales or rentals are made. The Data access layer to handle the information flow between the application and the database. Finally there is the Database layer, which is responsible for storing information regarding customers, employees, car inventory, car pricing, and rental rates. Utilising agile development and following the established architecture, the developers can ensure every project iteration is capable of carrying out the system’s main functions.
 				</p> <br/>
-				<img id="archImg" src="../Layered architecture_2.png" />
+				<img id="archImg" src="../Layered architecture_2.png" alt=""/>
 				<a  href="#top"><p class="backToTop">Back to Top &uarr;</p></a>
-			<a id="components"><li id="sectionTitle">Components</li></a>
-				<img src="../ComponentDiagram_Design.dfComponent.jpg"/>
+			<a id="components"><li class="sectionTitle">Components</li></a>
+				<img src="../ComponentDiagram_Design.dfComponent.jpg" alt=""/>
 				<p>
 				The components of the the SuperRent Management system are separated into their functional component groups. Coupling between components has been kept low to make sure that each component is as independent possible. Components such as Vehicle have been kept separated from components like Customer because there are intermediate components that complete process based on the two other components so they have no need to be coupled to each other. This increases component re-usability and also lowers the chance that modification to either component will cause dependency issues in other parts of the system.    
 				</p>
 				<a  href="#top"><p class="backToTop">Back to Top &uarr;</p></a>
-			<a id="database"><li id="sectionTitle">Database / Data Structure</li></a>
-				<img src="../Database_Design.jpg"/><br/>
+			<a id="database"><li class="sectionTitle">Database / Data Structure</li></a>
+				<img src="../Database_Design.jpg" alt=""/><br/>
 				<p>
 				The Database structure is based around three base tables. From VType, Locations, and customers the rest of the data base is built. VTypes references types of vehicles compact, economic, truck and so on. All other vehicle tables are children of this table. The hierarchy is Vtype to Vehicle model to vehicles that are then referenced by the remainder of the database. Customers are tracked based on there phone number which is placed as foreign keys inside reservations and rentals. Customer member ships are tracked in a separate table so that customers that don't have a membership don't waist space by having those empty fields. Rentals and Sales are tracked with there own ID's but are also connected to the customer and vehicle tables by the vehicle ID and Customer Phone number. This allows for those transactions to be searched based on location or customer through their customer an vehicle table relations.    
 				</p>
 				<a  href="#top"><p class="backToTop">Back to Top &uarr;</p></a>
-			<a id="detClass"><li id="sectionTitle">Detailed Class Diagrams</li></a>
-				<img id="classDia" src="../ClassDiagram_Design.dfPackage.jpg"/>
+			<a id="detClass"><li class="sectionTitle">Detailed Class Diagrams</li></a>
+				<img id="classDia" src="../ClassDiagram_Design.dfPackage.jpg" alt=""/>
 				<p>
 					The application utilises a session java bean to track user actions when they log onto the application. The singleton design pattern ensures the existence of the current user's session whilst other users may also be logged onto the same application. This design pattern is primarily used when users logon the application, conduct functions which are connected to the database, and print receipts with information gathered from the the database.
 				</p>
@@ -175,22 +177,27 @@
 					The functions are divided into java beans representing data entities and sessions. Whenever a user conducts any action, any of these java beans will hold onto the current user's login session and any information which was created or altered during the session.
 				</p>
 				<a  href="#top"><p class="backToTop">Back to Top &uarr;</p></a>
-			<a id="detSeq"><li id="sectionTitle">Detailed Sequence / State Diagrams</li></a>
-				<img class="seqDia" src="../SequenceDiagram_Design_Set_Rates_Costs.dfSequence.jpg"/>
-				<img class="seqDia" src="../SequenceDiagram_Design_Sell_Used_Vehicles.dfSequence.jpg"/>
-				<img class="seqDia" src="../SequenceDiagram_Design_Print_Reports.dfSequence.jpg"/>
-				<img class="seqDia" src="../SequenceDiagram_Design_Add_Vehicles.dfSequence.jpg"/>
-				<img class="seqDia" src="../SequenceDiagram_Design_Update_Vehicles.dfSequence.jpg"/>
-				<img class="seqDia" src="../SequenceDiagram_Design_Add_Customer.dfSequence.jpg"/>
-				<img class="seqDia" src="../SequenceDiagram_Design_Update_Customer.dfSequence.jpg"/>
-				<img src="../StatechartDiagram_Design.dfState.jpg"/>
+			<a id="detSeq"><li class="sectionTitle">Detailed Sequence / State Diagrams</li></a>
+				<img class="seqDia" src="../SequenceDiagram_Design_Set_Rates_Costs.dfSequence.jpg" alt=""/>
+				<img class="seqDia" src="../SequenceDiagram_Design_Sell_Used_Vehicles.dfSequence.jpg" alt=""/>
+				<img class="seqDia" src="../SequenceDiagram_Design_Print_Reports.dfSequence.jpg" alt=""/>
+				<img class="seqDia" src="../SequenceDiagram_Design_Add_Vehicles.dfSequence.jpg" alt=""/>
+				<img class="seqDia" src="../SequenceDiagram_Design_Update_Vehicles.dfSequence.jpg" alt=""/>
+				<img class="seqDia" src="../SequenceDiagram_Design_Add_Customer.dfSequence.jpg" alt=""/>
+				<img class="seqDia" src="../SequenceDiagram_Design_Update_Customer.dfSequence.jpg" alt=""/>
+				<img src="../StatechartDiagram_Design.dfState.jpg" alt=""/>
 				<a  href="#top"><p class="backToTop">Back to Top &uarr;</p></a>
-			<a id="ui"><li id="sectionTitle">User Interface</li></a>
+			<a id="ui"><li class="sectionTitle">User Interface</li></a>
 				<p>
 					The application UI features a login prompt upon opening where the user is prompted for a UserID and password. After the user has sucessfully logged onto the application, they are welcomed to a main menu hub.
+					From there, the user can access and use functions mentioned in the use cases earlier.
 				</p>
+				<img class="ui" src="../User Interface/login.png" alt=""/>
+				<br/>
+				<img class="ui" src="../User Interface/main_menu.png" alt=""/>
+				<a  href="#top"><p class="backToTop">Back to Top &uarr;</p></a>
 		</ol>
-	<a id="processModel"><li id="sectionTitle">Process Model</li></a>
+	<a id="processModel"><li class="sectionTitle">Process Model</li></a>
 		<p>	
 			The Super Rent software tool will be developed using the Spiral Model. This iterative process model will allow
 			for portions of the project to be brought on-line and tested before the project is completed. This gives the 
@@ -219,9 +226,11 @@
 			Once the final spiral is complete the manager system should be up and running if any extra requirements have been found 
 			during previous cycles and new cycle can begin. If not final testing can be completed before the software is sent shipped
 		</p> <a  href="#top"><p class="backToTop">Back to Top &uarr;</p></a>
-	<a id="gantt"><li id="sectionTitle">Gantt Chart</li></a>
-		<img src="../Assignment 2 - Project Gantt Chart2.jpg"/>
-		
+	<a id="gantt"><li class="sectionTitle">Gantt Chart</li></a>
+		<img src="../Assignment 2 - Project Gantt Chart2.jpg" alt=""/>
+		<p>
+			The project will take place over an approximate seven-month timeline. Follwing our established process model and estimating one month per project iteration, each iteration will prioritize upon functional requirements, design, implementation and testing. This iterative process will repeat until the project's expected completion date where the final system and acceptance tests will take place before release.
+		</p>
 		<a  href="#top"><p class="backToTop">Back to Top &uarr;</p></a>
 	</ol>
 </body>
